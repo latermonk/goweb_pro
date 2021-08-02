@@ -29,13 +29,19 @@ func main() {
 	/* 生产环境 zap log 的使用方式*/
 	logger, _ := zap.NewProduction()
 	defer logger.Sync()
-	logger.Info("failed to fetch URL",
-		// Structured context as strongly typed Field values.
+	//logger.Info("failed to fetch URL",
+	//	// Structured context as strongly typed Field values.
+	//	zap.String("url", url),
+	//	zap.Int("attempt", 3),
+	//	zap.Duration("backoff", time.Second),
+	//)
+
+	logger.Error( "panic",
 		zap.String("url", url),
 		zap.Int("attempt", 3),
 		zap.Duration("backoff", time.Second),
-	)
-
+		)
+	// 如何打印颜色出来？
 
 
 
