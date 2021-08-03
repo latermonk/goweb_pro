@@ -2,7 +2,6 @@
 
 
 ![golang-gin-advance02](_image/golang-gin-advance02.jpg)
-![golang-gin-advance01](_image/golang-gin-advance01.jpg)
 
 
 
